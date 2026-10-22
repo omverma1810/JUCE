@@ -1,0 +1,10 @@
+REAPER 7.82/macOS-arm64
+VST3:Gain PoC (Espirit Tech): loaded as 'VST3: Gain PoC (Espirit Tech)', param 0 'Gain' = -6.0
+  rendered reaper_vst3_minus6dB.wav
+AU:Espirit Tech: Gain PoC: loaded as 'AU: Gain PoC (Espirit Tech)', param 0 'Gain' = -6.0
+  rendered reaper_au_minus6dB.wav
+
+Level check (steady-state region):
+  sine_1k_-12dBFS.wav: peak -12.00 dBFS
+  reaper_vst3_minus6dB.wav: peak -18.00 dBFS
+  reaper_au_minus6dB.wav: peak -18.00 dBFS

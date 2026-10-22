@@ -35,6 +35,25 @@ Artefacts land in `build/GainPlugin_artefacts/Release/` and the AU/VST3 are copi
 
 Full logs are in [`validation/`](validation/).
 
+## DAW test — REAPER 7.82 (macOS arm64)
+[`demo/reaper_gain_test.lua`](demo/reaper_gain_test.lua) is a ReaScript that loads the plugin
+through REAPER's API, sets Gain to −6 dB, renders a −12 dBFS 1 kHz test tone
+([`demo/sine_1k_-12dBFS.wav`](demo/sine_1k_-12dBFS.wav)) and logs the result.
+
+| Format | Loaded by REAPER as | Gain | Output peak |
+|---|---|---|---|
+| VST3 | `VST3: Gain PoC (Espirit Tech)` | −6.0 dB | −18.00 dBFS |
+| AU | `AU: Gain PoC (Espirit Tech)` | −6.0 dB | −18.00 dBFS |
+
+Both formats attenuate the signal by exactly 6 dB. Rendered files and the log are in
+[`demo/`](demo/).
+
+To rerun it (uses a separate REAPER instance, so an open REAPER session is untouched):
+```bash
+/Applications/REAPER.app/Contents/MacOS/REAPER -newinst -nosplash -new "$PWD/demo/reaper_gain_test.lua"
+```
+The script writes to an absolute path, so edit `dir` at the top of the script if the repo lives elsewhere.
+
 ## Plugin identifiers
 | Field | Value |
 |---|---|
@@ -43,6 +62,6 @@ Full logs are in [`validation/`](validation/).
 | Bundle ID | `com.espirittech.gainplugin` |
 
 ## Not yet covered
-- REAPER and Logic Pro manual testing
+- Logic Pro / GarageBand testing of the AU
 - Developer ID code signing and notarization
 - AAX (requires Avid developer account, AAX SDK and PACE signing)
