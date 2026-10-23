@@ -50,3 +50,6 @@ target_link_libraries(GainPlugin
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags
         juce::juce_recommended_warning_flags)
+
+# Multi-effect showcase plugin with dashboard UI
+add_subdirectory(VibeFX)

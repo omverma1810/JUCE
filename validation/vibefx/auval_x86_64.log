@@ -1,0 +1,521 @@
+
+    AU Validation Tool
+    Version: 1.10.0 
+    Copyright 2003-2019, Apple Inc. All Rights Reserved.
+    Specify -h (-help) for command options
+
+--------------------------------------------------
+VALIDATING AUDIO UNIT: 'aufx' - 'Vbfx' - 'Esp1'
+--------------------------------------------------
+Manufacturer String: Espirit Tech
+AudioUnit Name: Vibe FX
+Component Version: 0.1.0 (0x100)
+
+* * PASS
+--------------------------------------------------
+TESTING OPEN TIMES:
+COLD:
+Time to open AudioUnit:         1103.590 ms
+WARM:
+Time to open AudioUnit:         1.991  ms
+This AudioUnit is a version 2 implementation.
+FIRST TIME:
+Time for initialization:        0.060 ms
+
+* * PASS
+--------------------------------------------------
+VERIFYING DEFAULT SCOPE FORMATS:
+Input Scope Bus Configuration:
+ Default Bus Count:1
+    Bus Name: Input
+    Default Format: AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+    Has Channel Layouts: 0x640001 0x650002 0x660002 0x670002 0x6A0002 
+    Default Layout:
+	Tag=0x650002, Num Chan Descs=0
+
+Output Scope Bus Configuration:
+ Default Bus Count:1
+    Bus Name: Output
+    Default Format: AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+    Has Channel Layouts: 0x640001 0x650002 0x660002 0x670002 0x6A0002 
+    Default Layout:
+	Tag=0x650002, Num Chan Descs=0
+
+* * PASS
+--------------------------------------------------
+VERIFYING REQUIRED PROPERTIES:
+
+* * PASS
+--------------------------------------------------
+VERIFYING RECOMMENDED PROPERTIES:
+  VERIFYING PROPERTY: Latency
+    PASS
+  VERIFYING PROPERTY: Tail Time
+    PASS
+  VERIFYING PROPERTY: Bypass Effect
+    PASS
+
+* * PASS
+--------------------------------------------------
+VERIFYING OPTIONAL PROPERTIES:
+
+* * PASS
+--------------------------------------------------
+VERIFYING SPECIAL PROPERTIES:
+
+VERIFYING CUSTOM UI
+Cocoa Views Available: 1
+  JUCE_AUCocoaViewClass_b5afa6a574510466
+    PASS
+
+HAS FACTORY PRESETS
+    ID:   0    Name: Clean
+    ID:   1    Name: Slowed + Reverb
+    ID:   2    Name: Nightcore
+    ID:   3    Name: Sped Up
+    ID:   4    Name: Lo-Fi Chill
+    ID:   5    Name: Vaporwave
+    ID:   6    Name: 8D Audio
+    ID:   7    Name: Telephone
+    ID:   8    Name: Old Radio
+    ID:   9    Name: Underwater
+    ID:  10    Name: Echo Canyon
+    ID:  11    Name: Concert Hall
+    ID:  12    Name: Bass Boosted
+    ID:  13    Name: Dreamy
+    ID:  14    Name: Intro / Outro Fades
+
+VERIFYING CLASS INFO
+    PASS
+
+TESTING HOST CALLBACKS
+    PASS
+
+* * PASS
+--------------------------------------------------
+PUBLISHED PARAMETER INFO:
+
+# # # 46 Global Scope Parameters:
+Parameter ID:16300247
+Name: Speed On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:106111499
+Name: Fade Out Now
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:109641799
+Name: Speed
+Parameter Type: Generic
+Values: Minimum = 0.50x, Default = 1.00x, Maximum = 1.50x
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:229808697
+Name: Echo On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:341407544
+Name: Lo-Fi On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:388797217
+Name: Lo-Fi Noise
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 20 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:389898092
+Name: Reverb On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:461706307
+Name: Chorus Mix
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 50 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:525670155
+Name: Outro Fade
+Parameter Type: Generic
+Values: Minimum = 0.0 s, Default = 4.0 s, Maximum = 10.0 s
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:526250407
+Name: Fades On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:568837293
+Name: Drive
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 30 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:594753369
+Name: Filter Resonance
+Parameter Type: Generic
+Values: Minimum = 0.50, Default = 0.71, Maximum = 8.00
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:681616706
+Name: Echo Mix
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 30 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:731462616
+Name: Bass Frequency
+Parameter Type: Generic
+Values: Minimum = 40 Hz, Default = 90 Hz, Maximum = 250 Hz
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:731476191
+Name: Bass Boost
+Parameter Type: Generic
+Values: Minimum = 0.0 dB, Default = +6.0 dB, Maximum = +15.0 dB
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:760358648
+Name: Width On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:773352680
+Name: Bypass
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:780638759
+Name: Drive Mix
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 100 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:873956894
+Name: Output Mix
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 100 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1018770773
+Name: 8D On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1030029902
+Name: Reverb Size
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 70 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1056061896
+Name: Intro Fade
+Parameter Type: Generic
+Values: Minimum = 0.0 s, Default = 3.0 s, Maximum = 10.0 s
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1102591217
+Name: Stereo Width
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 140 %, Maximum = 200 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1123272472
+Name: Chorus On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1142998676
+Name: Filter Cutoff
+Parameter Type: Generic
+Values: Minimum = 20 Hz, Default = 1.0 kHz, Maximum = 20.0 kHz
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1257564065
+Name: Filter Type
+Parameter Type: Indexed
+Values: Minimum = Low-pass, Default = Low-pass, Maximum = Band-pass
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+Parameter has Value Strings
+Num Strings = 3
+Value: 0,  String: Low-pass
+Value: 1,  String: High-pass
+Value: 2,  String: Band-pass
+  -parameter PASS
+
+Parameter ID:1266111494
+Name: Filter On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1309694698
+Name: Chorus Depth
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 40 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1322673149
+Name: Output Gain
+Parameter Type: Generic
+Values: Minimum = -24.0 dB, Default = 0.0 dB, Maximum = +12.0 dB
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1349420655
+Name: Reverb Mix
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 30 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1428134873
+Name: Chorus Rate
+Parameter Type: Generic
+Values: Minimum = 0.05 Hz, Default = 0.80 Hz, Maximum = 5.00 Hz
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1549202612
+Name: Drive On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1674746911
+Name: Lo-Fi Bits
+Parameter Type: Generic
+Values: Minimum = 4.0 bit, Default = 10.0 bit, Maximum = 16.0 bit
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1675215865
+Name: Lo-Fi Rate
+Parameter Type: Generic
+Values: Minimum = 2.0 kHz, Default = 16.0 kHz, Maximum = 44.1 kHz
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1675288715
+Name: Lo-Fi Tone
+Parameter Type: Generic
+Values: Minimum = 1.0 kHz, Default = 7.0 kHz, Maximum = 20.0 kHz
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1706187669
+Name: Reverb Damping
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 50 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1745973572
+Name: Echo Ping-Pong
+Parameter Type: Boolean
+Values: Minimum = Off, Default = On, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1802973351
+Name: Echo Time
+Parameter Type: Generic
+Values: Minimum = 20 ms, Default = 350 ms, Maximum = 1500 ms
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1802979148
+Name: Echo Tone
+Parameter Type: Generic
+Values: Minimum = 1.0 kHz, Default = 6.0 kHz, Maximum = 20.0 kHz
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1815284543
+Name: Bass On
+Parameter Type: Boolean
+Values: Minimum = Off, Default = Off, Maximum = On
+Flags: Values Have Strings, High Resolution, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1869829401
+Name: Reverb Width
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 100 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1933733590
+Name: 8D Rate
+Parameter Type: Generic
+Values: Minimum = 0.02 Hz, Default = 0.15 Hz, Maximum = 1.00 Hz
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1950869389
+Name: 8D Depth
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 100 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1981828191
+Name: Echo Feedback
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 40 %, Maximum = 95 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1993697315
+Name: Lo-Fi Mix
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 100 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Parameter ID:1993707110
+Name: Lo-Fi Wow
+Parameter Type: Generic
+Values: Minimum = 0 %, Default = 30 %, Maximum = 100 %
+Flags: Values Have Strings, High Resolution, Can Ramp, Readable, Writable 
+  -parameter PASS
+
+Testing that parameters retain value across reset and initialization
+  PASS
+
+* * PASS
+--------------------------------------------------
+FORMAT TESTS:
+
+Reported Channel Capabilities (explicit):
+      [1, 1]  [2, 2]  
+
+Input/Output Channel Handling:
+1-1   1-2   1-4   1-5   1-6   1-7   1-8   2-2   2-4   2-5   2-6   2-7   2-8   4-4   4-5   5-5   6-6   7-7   8-8
+X                                         X                                                                       
+
+# # AudioChannelLayouts (5), Input Scope:
+ChannelLayout is Writable: T
+The Unit publishes the following Channel Layouts:
+  0x640001, 0x650002, 0x660002, 0x670002, 0x6A0002, 
+
+Is Audio Channel Layout Available:
+Mono    Stereo  Binau.  AU_4    Ambi.   AU_5    AU_5_0  AU_6    AU_6_0  AU_7_0  AU_7_0F AU_8    AU_5_1  AU_6_1  AU_7_1  AU_7_1F 
+X       X       X                                                                                                               
+
+Current Format:AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Current Format Tag = 0x650002, New Format Tag = 0x640001, Success - did not reset format with mis-matched layout
+
+Current Format:AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Current Format Tag = 0x650002, New Format Tag = 0x650002, Successsful
+
+Current Format:AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Current Format Tag = 0x650002, New Format Tag = 0x6A0002, Successsful
+
+# # AudioChannelLayouts (5), Output Scope:
+ChannelLayout is Writable: T
+The Unit publishes the following Channel Layouts:
+  0x640001, 0x650002, 0x660002, 0x670002, 0x6A0002, 
+
+Is Audio Channel Layout Available:
+Mono    Stereo  Binau.  AU_4    Ambi.   AU_5    AU_5_0  AU_6    AU_6_0  AU_7_0  AU_7_0F AU_8    AU_5_1  AU_6_1  AU_7_1  AU_7_1F 
+X       X       X                                                                                                               
+
+Current Format:AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Current Format Tag = 0x650002, New Format Tag = 0x640001, Success - did not reset format with mis-matched layout
+
+Current Format:AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Current Format Tag = 0x650002, New Format Tag = 0x650002, Successsful
+
+Current Format:AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Current Format Tag = 0x650002, New Format Tag = 0x6A0002, Successsful
+
+* * PASS
+--------------------------------------------------
+RENDER TESTS:
+
+Input Format: AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Output Format: AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+Render Test at 512 frames
+Slicing Render Test at 64 frames
+  PASS
+
+
+Render Test at 64 frames, sample rate: 22050 Hz
+Render Test at 137 frames, sample rate: 96000 Hz
+Render Test at 4096 frames, sample rate: 48000 Hz
+Render Test at 4096 frames, sample rate: 192000 Hz
+Render Test at 4096 frames, sample rate: 11025 Hz
+Render Test at 512 frames, sample rate: 44100 Hz
+  PASS
+
+1 Channel Test:
+Render Test at 512 frames
+  PASS
+
+Checking connection semantics:
+Connection format:
+AudioStreamBasicDescription:  2 ch,  44100 Hz, Float32, deinterleaved
+  PASS
+
+Bad Max Frames - Render should fail
+  PASS
+
+Checking parameter setting
+Using AudioUnitSetParameter
+Using AudioUnitScheduleParameter
+  PASS
+
+Checking ramped parameter scheduling
+  PASS
+
+Test MIDI
+  PASS
+
+* * PASS
+--------------------------------------------------
+AU VALIDATION SUCCEEDED.
+--------------------------------------------------

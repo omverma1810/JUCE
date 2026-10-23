@@ -4,3 +4,4 @@ build/
 tools/
 peaks/
 *.reapeaks
+demo/vibefx_presets/*.wav

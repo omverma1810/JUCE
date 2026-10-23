@@ -9,6 +9,7 @@
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tcolorbox}
+\usepackage{graphicx}
 
 \definecolor{accent}{HTML}{1F4E79}
 \definecolor{ok}{HTML}{2E7D32}
@@ -116,5 +117,37 @@ Logic Pro is a paid app, but Apple offers a \textbf{free 90-day trial}. Two free
         on any Mac, and package it as an installer.
   \item \textbf{Windows:} the same code can be built for Windows when needed.
 \end{itemize}
+
+\newpage
+\section{Going further: Vibe FX}
+To make the demo more impressive, we built a second plugin, \textbf{Vibe FX}: an effects rack with
+the sounds people use in TikTok and YouTube song edits, plus a live dashboard.
+
+\begin{center}
+\includegraphics[width=\linewidth]{images/vibefx_slowed_reverb.png}
+\end{center}
+
+\begin{itemize}
+  \item \textbf{11 effects:} speed (slowed / sped-up), lo-fi, filter, bass boost, drive, chorus,
+        echo, reverb, 8D audio, stereo width, and intro/outro fades.
+  \item \textbf{15 one-click presets:} Slowed + Reverb, Nightcore, Lo-Fi Chill, Vaporwave, 8D Audio,
+        Telephone, Old Radio, Underwater, Echo Canyon, Bass Boosted and more.
+  \item \textbf{Live dashboard:} see which effects are on, compare the original and processed sound
+        on a spectrum display, and watch the waveform and levels.
+  \item \textbf{Built-in player:} drop any song into the standalone app; no music software needed.
+  \item \textbf{Tested:} passes Apple's official plugin test (auval), and all 15 presets
+        were rendered in REAPER.
+\end{itemize}
+
+\textbf{Demo in 3 minutes:}
+\begin{enumerate}
+  \item Double-click \texttt{demo/Start Vibe FX Demo.command}: the app opens with a demo song loaded.
+        (Or open \emph{Vibe FX} and drop any song onto it.)
+  \item Press \textbf{Play}, then step through the presets with the \textbf{<} \textbf{>} buttons.
+  \item Click \textbf{Bypass} to switch between the original and the effect.
+  \item Turn a few knobs and watch the spectrum and signal chain react.
+  \item In REAPER, open \texttt{demo/vibefx\_presets/VibeFX\_demo.rpp} to show it inside a DAW.
+\end{enumerate}
+Pre-rendered examples of every preset are in \texttt{demo/vibefx\_presets/}.
 
 \end{document}

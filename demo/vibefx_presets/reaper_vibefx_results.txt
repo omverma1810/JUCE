@@ -1,0 +1,38 @@
+REAPER 7.82/macOS-arm64
+Loaded 'VST3: Vibe FX (Espirit Tech)' with 50 parameters and 15 presets
+preset  1: Clean                  -> 01_Clean.wav
+preset  2: Slowed + Reverb        -> 02_Slowed_Reverb.wav
+preset  3: Nightcore              -> 03_Nightcore.wav
+preset  4: Sped Up                -> 04_Sped_Up.wav
+preset  5: Lo-Fi Chill            -> 05_Lo_Fi_Chill.wav
+preset  6: Vaporwave              -> 06_Vaporwave.wav
+preset  7: 8D Audio               -> 07_8D_Audio.wav
+preset  8: Telephone              -> 08_Telephone.wav
+preset  9: Old Radio              -> 09_Old_Radio.wav
+preset 10: Underwater             -> 10_Underwater.wav
+preset 11: Echo Canyon            -> 11_Echo_Canyon.wav
+preset 12: Concert Hall           -> 12_Concert_Hall.wav
+preset 13: Bass Boosted           -> 13_Bass_Boosted.wav
+preset 14: Dreamy                 -> 14_Dreamy.wav
+preset 15: Intro / Outro Fades    -> 15_Intro_Outro_Fades.wav
+saved VibeFX_demo.rpp
+
+Analysis of 20 s renders (demo_track.wav through each preset):
+file                          RMS dB  peak dB  L/R corr  bright  1st s dB
+01_Clean.wav                   -16.5     -2.5      0.98   0.132     -15.4
+02_Slowed_Reverb.wav           -12.9     -2.1      0.42   0.042     -25.4
+03_Nightcore.wav               -12.7     -0.3      0.98   0.099     -11.8
+04_Sped_Up.wav                 -17.3     -2.9      0.99   0.097     -16.6
+05_Lo_Fi_Chill.wav             -14.9     -1.7      0.97   0.057     -15.7
+06_Vaporwave.wav               -16.9     -3.8      0.37   0.030     -20.8
+07_8D_Audio.wav                -15.3     -0.0      0.57   0.140     -12.5
+08_Telephone.wav               -16.8     -1.7      1.00   0.124     -15.9
+09_Old_Radio.wav               -16.8      0.0      1.00   0.160     -16.0
+10_Underwater.wav              -13.1     -2.4      0.86   0.019     -12.9
+11_Echo_Canyon.wav             -12.7     -0.0      0.88   0.141     -11.8
+12_Concert_Hall.wav            -13.1     -0.9      0.48   0.133     -12.2
+13_Bass_Boosted.wav             -9.1     -2.0      0.99   0.088      -8.6
+14_Dreamy.wav                  -15.5     -1.9      0.38   0.126     -15.5
+15_Intro_Outro_Fades.wav       -17.0     -2.5      0.98   0.139     -35.4
+
+RMS = loudness, L/R corr = 1.00 mono / lower is wider, bright = high-frequency content, 1st s = level in the first second
